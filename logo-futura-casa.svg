@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 210" role="img" aria-label="Futura Casa">
+  <defs>
+    <style>
+      .w{font-family:Inter,Arial,sans-serif;font-weight:500;letter-spacing:-8px;fill:#fff}
+      .g{font-family:Inter,Arial,sans-serif;font-weight:500;letter-spacing:-8px;fill:#5b5f68}
+      .o{fill:#f36f2f}
+      .s{font-family:Inter,Arial,sans-serif;font-weight:400;letter-spacing:2px;fill:#fff;opacity:.86}
+    </style>
+  </defs>
+  <text x="8" y="72" font-size="76" class="w">Futura</text>
+  <text x="82" y="148" font-size="76" class="w">Cas</text>
+  <text x="242" y="148" font-size="76" class="o" font-family="Inter,Arial,sans-serif" font-weight="500" letter-spacing="-8">a</text>
+  <text x="74" y="190" font-size="24" class="s">Onde tudo começa</text>
+</svg>

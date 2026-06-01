@@ -1,23 +1,30 @@
-# Futura Casa — Plataforma Final Profissional
+# Futura Casa — Versão Final Corrigida
 
-Aplicação front-end estática, pronta para GitHub Pages, Vercel, Netlify ou Cloudflare Pages.
+Esta versão corrige tela branca causada por carregamento incompleto de arquivos, rewrite amplo no Vercel ou service worker/cache antigo.
 
-## Estrutura
+## Estrutura correta
 
-- `index.html` — entrada da aplicação
-- `styles.css` — design system responsivo
-- `app.js` — navegação, simulador, CRM, marketplace, painel gestor e IA demonstrativa
-- `assets/` — logomarca, ícone e imagens renderizadas dos modelos de casas
-- `manifest.webmanifest` — PWA
-- `service-worker.js` — cache básico
-- `vercel.json` — configuração para Vercel
+Suba todos estes itens na raiz do repositório/projeto:
 
-## Publicação
+- index.html
+- styles.css
+- app.js
+- assets/
 
-Envie todo o conteúdo da pasta `futura-casa-final` para o repositório. A pasta `assets` deve permanecer exatamente com este nome.
+Não suba apenas o index.html.
 
-Para Vercel: importe o repositório e publique como projeto estático, sem build command.
+## Vercel
 
-## Observação
+No Vercel, importe o repositório como projeto estático. Não é necessário vercel.json.
 
-Esta versão é uma demonstração front-end premium. Para produção real, conectar backend, login, banco de dados, CRM real, WhatsApp Business API, gateways de pagamento/boletos e IA via API.
+Se já havia uma versão anterior publicada:
+1. Limpe cache do navegador.
+2. Faça novo deploy.
+3. Em caso de PWA/cache antigo, abra em aba anônima ou remova dados do site.
+
+## HTML único
+
+Também gerei uma versão standalone:
+futura-casa-final-standalone.html
+
+Ela não depende de CSS/JS externos.

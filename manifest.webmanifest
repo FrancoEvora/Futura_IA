@@ -1,0 +1,9 @@
+{
+  "name": "Futura Casa",
+  "short_name": "Futura Casa",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f5f1ea",
+  "theme_color": "#10141d",
+  "icons": [{"src":"assets/icon.svg","sizes":"any","type":"image/svg+xml"}]
+}

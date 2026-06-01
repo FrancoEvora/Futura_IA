@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Futura Casa | Plataforma Final Safe</title>
+<meta name="theme-color" content="#10141d">
+<script>document.documentElement.className='js';</script>
+<style>
+:root{--bg:#f3efe8;--paper:#fffdfa;--ink:#151922;--muted:#67707d;--line:#e7dccd;--dark:#10141d;--dark2:#171d28;--orange:#f36f2f;--orange2:#ff8b4b;--green:#2caf66;--red:#d95050;--yellow:#d8a02b;--shadow:0 18px 48px rgba(16,20,29,.10);--radius:24px;--side:292px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 8% -10%,rgba(243,111,47,.18),transparent 36rem),var(--bg);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;color:var(--ink)}a{text-decoration:none;color:inherit}button,input,select{font:inherit}button{cursor:pointer}img{display:block;max-width:100%;height:auto}.app{display:grid;grid-template-columns:var(--side) minmax(0,1fr);min-height:100vh}.sidebar{position:sticky;top:0;height:100vh;background:linear-gradient(180deg,#121721,#0b0f16);color:white;padding:20px 16px;display:flex;flex-direction:column;gap:18px}.brand{display:flex;gap:12px;align-items:center;padding:12px;border:1px solid rgba(255,255,255,.08);background:rgba(255,255,255,.04);border-radius:20px}.brand img{width:124px}.brand small{display:block;color:rgba(255,255,255,.62)}.nav{display:grid;gap:8px}.nav a{display:flex;align-items:center;gap:12px;padding:13px;border-radius:16px;color:rgba(255,255,255,.76);font-weight:800}.nav a.active,.nav a:hover{background:rgba(243,111,47,.16);color:white}.nav .ico{width:38px;height:38px;border-radius:13px;display:grid;place-items:center;background:rgba(255,255,255,.06)}.sidecard{margin-top:auto;padding:18px;border:1px solid rgba(255,255,255,.10);background:rgba(255,255,255,.045);border-radius:22px}.main{min-width:0}.top{position:sticky;top:0;z-index:10;background:rgba(243,239,232,.88);backdrop-filter:blur(16px);border-bottom:1px solid rgba(16,20,29,.06)}.topin{padding:16px 26px;display:flex;gap:14px;align-items:center}.hamb{display:none;width:48px;height:48px;border-radius:16px;border:1px solid var(--line);background:white;box-shadow:var(--shadow)}.search{flex:1;display:flex;gap:12px;align-items:center;background:white;border:1px solid var(--line);border-radius:18px;min-height:54px;padding:0 16px;box-shadow:var(--shadow)}.search input{border:0;outline:0;width:100%;background:transparent}.avatar{min-height:54px;padding:0 18px;border-radius:16px;border:1px solid var(--line);background:white;display:grid;place-items:center;font-weight:900;box-shadow:var(--shadow)}.content{padding:28px;display:grid;gap:24px;padding-bottom:120px}.page{display:block}.js .page{display:none}.js .page.active{display:block}.hero{position:relative;overflow:hidden;border-radius:32px;padding:34px;background:linear-gradient(135deg,#10141d,#1e2532 48%,#66351c);color:white;box-shadow:0 30px 80px rgba(16,20,29,.18)}.hero h1{font-size:clamp(32px,4.6vw,64px);line-height:1.02;margin:6px 0 12px;letter-spacing:-.05em}.hero p{max-width:760px;color:rgba(255,255,255,.80);font-size:18px;line-height:1.55}.heroGrid{display:grid;grid-template-columns:1.25fr .75fr;gap:22px;align-items:end}.eyebrow{color:var(--orange);font-weight:900;letter-spacing:.10em;text-transform:uppercase;font-size:12px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;border:0;border-radius:16px;min-height:50px;padding:0 18px;font-weight:900}.btnPrimary{background:linear-gradient(180deg,var(--orange2),var(--orange));color:white}.btnDark{background:var(--dark);color:white}.btnLight{background:white;color:var(--ink);border:1px solid var(--line)}.btnGhost{background:rgba(255,255,255,.11);color:white;border:1px solid rgba(255,255,255,.18)}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:22px}.card{background:var(--paper);border:1px solid rgba(16,20,29,.06);border-radius:var(--radius);padding:24px;box-shadow:var(--shadow)}.card h2,.card h3,.card h4{margin:0}.sectionHead{display:flex;justify-content:space-between;gap:16px;align-items:flex-start;margin-bottom:18px}.grid2,.grid3,.grid4{display:grid;gap:18px}.grid2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid3{grid-template-columns:repeat(3,minmax(0,1fr))}.grid4{grid-template-columns:repeat(4,minmax(0,1fr))}.stat{padding:22px;border:1px solid var(--line);border-radius:22px;background:white}.stat small{display:block;color:var(--muted);margin-bottom:6px}.stat b{font-size:34px;letter-spacing:-.04em}.pillbar{display:flex;flex-wrap:wrap;gap:8px;padding:6px;background:#f5eee5;border:1px solid var(--line);border-radius:18px;width:max-content;max-width:100%}.pill{border:0;background:transparent;color:var(--muted);font-weight:900;border-radius:14px;padding:12px 14px}.pill.active{background:linear-gradient(180deg,var(--orange2),var(--orange));color:white}.fields{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:18px}.field{display:grid;gap:8px}.field label{font-weight:900;color:#4d5665}.field input,.field select{width:100%;min-height:54px;border:1px solid var(--line);border-radius:16px;background:white;padding:0 14px;outline:0}.field input[type=range]{padding:0;accent-color:var(--orange)}.result{background:linear-gradient(180deg,#121721,#1d2634);color:white;border-radius:28px;padding:24px;display:grid;gap:18px}.resultGrid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}.resItem{padding:16px;border-radius:18px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.08)}.resItem small{display:block;color:rgba(255,255,255,.64);margin-bottom:6px}.resItem b{font-size:24px}.note{border:1px solid #ead7be;background:#fff7ec;color:#765733;padding:14px 16px;border-radius:16px}.houseGrid,.prodGrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}.house,.prod{overflow:hidden;border:1px solid var(--line);border-radius:24px;background:white;box-shadow:var(--shadow)}.houseImgs{display:grid;grid-template-columns:1fr 1fr;background:#efe8de}.houseImgs img{width:100%;aspect-ratio:4/3;object-fit:cover}.body{padding:18px;display:grid;gap:10px}.tag{display:inline-flex;width:max-content;padding:7px 12px;border-radius:99px;background:rgba(243,111,47,.12);color:var(--orange);font-size:12px;font-weight:900}.price{font-weight:900;font-size:20px}.muted{color:var(--muted)}.split{display:flex;gap:12px;align-items:center;justify-content:space-between}.list{display:grid;gap:12px}.item{display:flex;gap:12px;justify-content:space-between;align-items:center;border:1px solid var(--line);background:white;border-radius:18px;padding:16px}.progress{height:10px;border-radius:99px;background:#efe7dc;overflow:hidden}.progress span{display:block;height:100%;background:linear-gradient(90deg,var(--orange),#ffbd85)}.pipeline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.col{background:white;border:1px solid var(--line);border-radius:24px;padding:16px;min-height:330px}.leadcard{background:#f8f2ea;border:1px solid #eadfce;border-radius:18px;padding:14px;margin-bottom:10px;display:grid;gap:8px}.chat{border:1px solid var(--line);border-radius:24px;overflow:hidden;background:white}.thread{padding:18px;display:grid;gap:12px;max-height:390px;overflow:auto;background:linear-gradient(180deg,#fbfaf7,#f1ebe2)}.msg{padding:14px 16px;border-radius:18px;line-height:1.45;max-width:84%}.bot{background:white;border:1px solid var(--line);border-bottom-left-radius:6px}.user{background:var(--dark);color:white;margin-left:auto;border-bottom-right-radius:6px}.chatbar{display:flex;gap:10px;padding:14px;border-top:1px solid var(--line)}.chatbar input{flex:1;border:1px solid var(--line);border-radius:16px;padding:0 14px;min-height:52px}.bottom{display:none}.drawerShade,.drawer{display:none}.toast{position:fixed;right:18px;bottom:18px;z-index:80;background:#10141d;color:white;border-radius:16px;padding:14px 18px;box-shadow:var(--shadow);opacity:0;transform:translateY(10px);transition:.22s}.toast.show{opacity:1;transform:translateY(0)}
+@media(max-width:1180px){.grid4{grid-template-columns:repeat(2,1fr)}.grid3,.houseGrid,.prodGrid{grid-template-columns:repeat(2,1fr)}.heroGrid,.grid2{grid-template-columns:1fr}.pipeline{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:920px){.app{grid-template-columns:1fr}.sidebar{display:none}.hamb{display:grid;place-items:center}.topin,.content{padding-left:16px;padding-right:16px}.avatar{display:none}.bottom{display:block;position:fixed;left:14px;right:14px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:50;background:rgba(16,20,29,.96);border:1px solid rgba(255,255,255,.09);border-radius:24px;padding:8px;box-shadow:0 24px 60px rgba(0,0,0,.25)}.bottom nav{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}.bottom a{display:grid;place-items:center;gap:3px;color:rgba(255,255,255,.7);font-size:11px;font-weight:800;padding:8px 2px;border-radius:16px}.bottom a.active{background:var(--orange);color:white}.drawerShade{position:fixed;inset:0;background:rgba(0,0,0,.55);z-index:70}.drawer{position:fixed;left:0;top:0;bottom:0;width:min(86vw,330px);z-index:80;background:#10141d;color:white;padding:18px;display:block}.drawerShade.show,.drawer.show{display:block}.drawerShade:not(.show),.drawer:not(.show){display:none}.hero{padding:24px}.actions{display:grid}.actions .btn{width:100%}}
+@media(max-width:680px){.grid4,.grid3,.grid2,.houseGrid,.prodGrid,.pipeline,.fields,.resultGrid{grid-template-columns:1fr}.sectionHead{flex-direction:column}.pillbar{width:100%;overflow:auto;flex-wrap:nowrap}.pill{white-space:nowrap}.content{gap:18px}.card{padding:18px}.hero h1{font-size:38px}.hero p{font-size:15px}.item,.split{align-items:flex-start}.split{flex-direction:column}.btn{width:100%}.houseImgs{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+<noscript><div style="padding:16px;background:#fff3e9;border:1px solid #f0d2bd;border-radius:16px;margin:16px">A plataforma também aparece sem JavaScript. As interações avançadas exigem JS ativo.</div></noscript>
+
+<div class="app">
+  <aside class="sidebar">
+    <a class="brand" href="#home" data-page-link="home"><img src="assets/logo-futura-casa.svg" alt="Futura Casa"><div><b>Plataforma Final</b><small>Onde tudo começa</small></div></a>
+    <nav class="nav">
+      <a href="#home" data-page-link="home" class="active"><span class="ico">🏠</span>Dashboard</a>
+      <a href="#catalog" data-page-link="catalog"><span class="ico">🧭</span>Lotes e Casas</a>
+      <a href="#sim" data-page-link="sim"><span class="ico">🧮</span>Simulador Pro</a>
+      <a href="#market" data-page-link="market"><span class="ico">🛍️</span>Marketplace</a>
+      <a href="#crm" data-page-link="crm"><span class="ico">👥</span>CRM Comercial</a>
+      <a href="#works" data-page-link="works"><span class="ico">🏗️</span>Obras e Cliente</a>
+      <a href="#manager" data-page-link="manager"><span class="ico">📊</span>Painel Gestor</a>
+      <a href="#ai" data-page-link="ai"><span class="ico">✨</span>IA de Suporte</a>
+    </nav>
+    <div class="sidecard"><div class="eyebrow">IA estratégica</div><b>Assistente comercial</b><p>Gera argumentos, compara cenários e apoia a decisão do cliente.</p><button class="btn btnPrimary" data-page-link="ai">Abrir IA</button></div>
+  </aside>
+  <main class="main">
+    <header class="top"><div class="topin"><button class="hamb" id="hamb">☰</button><div class="search">🔎<input placeholder="Buscar lote, casa, lead, obra ou fornecedor"></div><div class="avatar">FA</div></div></header>
+    <div class="content">
+
+      <section class="page active" id="home">
+        <div class="hero"><div class="heroGrid"><div><div class="eyebrow">Futura Casa</div><h1>Plataforma completa para vender lote, casa e jornada integrada.</h1><p>Versão static-first: o conteúdo aparece mesmo se o JavaScript falhar. O JS apenas melhora navegação, simulador, marketplace, CRM e IA.</p><div class="actions"><button class="btn btnPrimary" data-page-link="sim">Simular compra</button><button class="btn btnGhost" data-page-link="catalog">Ver modelos de casas</button></div></div><div class="card"><div class="eyebrow">Status</div><h2>Final profissional segura</h2><p class="muted">Sem tela branca: HTML renderizado diretamente, CSS embutido e JS progressivo.</p></div></div></div>
+        <div class="grid4" style="margin-top:24px">
+          <div class="stat"><small>Leads do mês</small><b>1.286</b><div class="muted">+18,4%</div></div>
+          <div class="stat"><small>VGV em propostas</small><b>R$ 9,4 mi</b><div class="muted">+12,1%</div></div>
+          <div class="stat"><small>Simulações</small><b>842</b><div class="muted">+22,1%</div></div>
+          <div class="stat"><small>Conversão</small><b>30,7%</b><div class="muted">+3,2 p.p.</div></div>
+        </div>
+      </section>
+
+      <section class="page" id="catalog">
+        <div class="card"><div class="sectionHead"><div><div class="eyebrow">Catálogo</div><h2>Lotes disponíveis</h2></div><button class="btn btnPrimary" data-page-link="sim">Simular lote</button></div><div class="list"><div class="item"><div><strong>Solaris Residencial Resort • Lote 45</strong><div class="muted">360 m² • Obras em implantação</div></div><strong>R$ 438.000</strong></div>
+<div class="item"><div><strong>Solaris Residencial Resort • Lote 81</strong><div class="muted">420 m² • Obras em implantação</div></div><strong>R$ 525.000</strong></div>
+<div class="item"><div><strong>Parque das Árvores • Lote 12</strong><div class="muted">300 m² • Pronto para construir</div></div><strong>R$ 238.000</strong></div>
+<div class="item"><div><strong>Parque das Árvores • Lote 26</strong><div class="muted">347 m² • Pronto para construir</div></div><strong>R$ 279.000</strong></div></div></div>
+        <div class="card" style="margin-top:24px"><div class="sectionHead"><div><div class="eyebrow">Casas</div><h2>Modelos com fachada e interior renderizados</h2></div></div><div class="houseGrid">
+<article class="house">
+  <div class="houseImgs"><img src="assets/houses/essenza-ext.jpg" alt="Casa Essenza fachada"><img src="assets/houses/essenza-int.jpg" alt="Casa Essenza interior"></div>
+  <div class="body"><span class="tag">Contemporânea</span><h3>Casa Essenza</h3><div class="muted">248 m² • fachada e interior renderizados</div><div class="price">A partir de R$ 990.000</div><button class="btn btnLight simHomeBtn" data-home="0">Simular este modelo</button></div>
+</article>
+
+<article class="house">
+  <div class="houseImgs"><img src="assets/houses/armonia-ext.jpg" alt="Casa Armonia fachada"><img src="assets/houses/armonia-int.jpg" alt="Casa Armonia interior"></div>
+  <div class="body"><span class="tag">Térrea premium</span><h3>Casa Armonia</h3><div class="muted">198 m² • fachada e interior renderizados</div><div class="price">A partir de R$ 790.000</div><button class="btn btnLight simHomeBtn" data-home="1">Simular este modelo</button></div>
+</article>
+
+<article class="house">
+  <div class="houseImgs"><img src="assets/houses/horizonti-ext.jpg" alt="Casa Horizonti fachada"><img src="assets/houses/horizonti-int.jpg" alt="Casa Horizonti interior"></div>
+  <div class="body"><span class="tag">Alto padrão</span><h3>Casa Horizonti</h3><div class="muted">312 m² • fachada e interior renderizados</div><div class="price">A partir de R$ 1.480.000</div><button class="btn btnLight simHomeBtn" data-home="2">Simular este modelo</button></div>
+</article>
+
+<article class="house">
+  <div class="houseImgs"><img src="assets/houses/villa-ext.jpg" alt="Casa Villa Bella fachada"><img src="assets/houses/villa-int.jpg" alt="Casa Villa Bella interior"></div>
+  <div class="body"><span class="tag">Clássica sofisticada</span><h3>Casa Villa Bella</h3><div class="muted">340 m² • fachada e interior renderizados</div><div class="price">A partir de R$ 1.680.000</div><button class="btn btnLight simHomeBtn" data-home="3">Simular este modelo</button></div>
+</article>
+
+<article class="house">
+  <div class="houseImgs"><img src="assets/houses/terrea-ext.jpg" alt="Casa Térrea Premium fachada"><img src="assets/houses/terrea-int.jpg" alt="Casa Térrea Premium interior"></div>
+  <div class="body"><span class="tag">Conforto funcional</span><h3>Casa Térrea Premium</h3><div class="muted">220 m² • fachada e interior renderizados</div><div class="price">A partir de R$ 860.000</div><button class="btn btnLight simHomeBtn" data-home="4">Simular este modelo</button></div>
+</article>
+
+<article class="house">
+  <div class="houseImgs"><img src="assets/houses/compacta-ext.jpg" alt="Casa Compacta Smart fachada"><img src="assets/houses/compacta-int.jpg" alt="Casa Compacta Smart interior"></div>
+  <div class="body"><span class="tag">Entrada premium</span><h3>Casa Compacta Smart</h3><div class="muted">124 m² • fachada e interior renderizados</div><div class="price">A partir de R$ 490.000</div><button class="btn btnLight simHomeBtn" data-home="5">Simular este modelo</button></div>
+</article></div></div>
+      </section>
+
+      <section class="page" id="sim">
+        <div class="grid2">
+          <div class="card"><div class="sectionHead"><div><div class="eyebrow">Simulador Pro</div><h2>Escolha a jornada financeira</h2></div></div>
+            <div class="pillbar">
+              <button class="pill active" data-mode="lot">Somente lote</button>
+              <button class="pill" data-mode="home">Somente casa</button>
+              <button class="pill" data-mode="combo">Lote + casa</button>
+              <button class="pill" data-mode="future">Lote agora + casa pré-contratada</button>
+            </div>
+            <div class="fields">
+              <div class="field"><label>Lote</label><select id="lotSelect"><option value="438000">Solaris • Lote 45 • 360 m²</option><option value="525000">Solaris • Lote 81 • 420 m²</option><option value="238000">Parque das Árvores • Lote 12</option></select></div>
+              <div class="field"><label>Casa</label><select id="homeSelect"><option value="990000">Casa Essenza • 248 m²</option><option value="790000">Casa Armonia • 198 m²</option><option value="1480000">Casa Horizonti • 312 m²</option><option value="490000">Casa Compacta Smart • 124 m²</option></select></div>
+              <div class="field"><label>Entrada (%)</label><input id="entry" type="range" min="10" max="50" value="20"><input id="entryText" value="20%"></div>
+              <div class="field"><label>Renda familiar</label><input id="income" type="number" value="17000"></div>
+              <div class="field"><label>Prazo</label><select id="term"><option value="120">120 meses</option><option value="180">180 meses</option><option value="240" selected>240 meses</option><option value="360">360 meses</option></select></div>
+              <div class="field"><label>Sistema</label><select id="system"><option>PRICE</option><option>SAC</option></select></div>
+            </div>
+          </div>
+          <div class="result"><div><div class="eyebrow">Resultado</div><h2 id="modeTitle">Somente lote</h2></div><div class="resultGrid">
+            <div class="resItem"><small>Total</small><b id="simTotal">R$ 438.000</b></div>
+            <div class="resItem"><small>Entrada</small><b id="simEntry">R$ 87.600</b></div>
+            <div class="resItem"><small>Financiado</small><b id="simFin">R$ 350.400</b></div>
+            <div class="resItem"><small>Parcela estimada</small><b id="simPay">R$ 3.574</b></div>
+            <div class="resItem"><small>Esforço / renda</small><b id="simRatio">21,0%</b></div>
+            <div class="resItem"><small>Diagnóstico</small><b id="simHealth">Saudável</b></div>
+          </div><div class="note">A simulação é demonstrativa. A versão de produção deve receber taxas, regras comerciais, correção, balões e tabelas oficiais.</div><div class="actions"><button class="btn btnPrimary" id="saveSim">Salvar proposta</button><button class="btn btnGhost" id="copySim">Copiar resumo</button></div></div>
+        </div>
+      </section>
+
+      <section class="page" id="market">
+        <div class="card"><div class="sectionHead"><div><div class="eyebrow">Marketplace</div><h2>Fornecedores e complementos</h2></div><div class="stat"><small>Orçamento</small><b id="cartTotal">R$ 0</b></div></div><div class="prodGrid"><article class="prod"><div class="body"><span class="tag">Energia</span><h3>Kit Energia Solar</h3><div class="muted">Parceiro verificado Futura Casa</div><div class="price">R$ 16.900</div><button class="btn btnLight addMarket" data-name="Kit Energia Solar" data-price="16900">Adicionar ao orçamento</button></div></article>
+<article class="prod"><div class="body"><span class="tag">Biofilia</span><h3>Paisagismo completo</h3><div class="muted">Parceiro verificado Futura Casa</div><div class="price">R$ 9.500</div><button class="btn btnLight addMarket" data-name="Paisagismo completo" data-price="9500">Adicionar ao orçamento</button></div></article>
+<article class="prod"><div class="body"><span class="tag">Casa Segura</span><h3>Automação e Segurança</h3><div class="muted">Parceiro verificado Futura Casa</div><div class="price">R$ 7.200</div><button class="btn btnLight addMarket" data-name="Automação e Segurança" data-price="7200">Adicionar ao orçamento</button></div></article>
+<article class="prod"><div class="body"><span class="tag">Lazer</span><h3>Espaço Gourmet</h3><div class="muted">Parceiro verificado Futura Casa</div><div class="price">R$ 21.400</div><button class="btn btnLight addMarket" data-name="Espaço Gourmet" data-price="21400">Adicionar ao orçamento</button></div></article>
+<article class="prod"><div class="body"><span class="tag">Resort</span><h3>Piscina Compacta</h3><div class="muted">Parceiro verificado Futura Casa</div><div class="price">R$ 39.800</div><button class="btn btnLight addMarket" data-name="Piscina Compacta" data-price="39800">Adicionar ao orçamento</button></div></article>
+<article class="prod"><div class="body"><span class="tag">Interiores</span><h3>Mobiliário Essencial</h3><div class="muted">Parceiro verificado Futura Casa</div><div class="price">R$ 57.800</div><button class="btn btnLight addMarket" data-name="Mobiliário Essencial" data-price="57800">Adicionar ao orçamento</button></div></article></div></div>
+        <div class="card" style="margin-top:24px"><div class="sectionHead"><div><div class="eyebrow">Orçamento</div><h2>Itens adicionados</h2></div><button class="btn btnDark" id="clearCart">Limpar</button></div><div class="list" id="cartList"><div class="muted">Nenhum item adicionado.</div></div></div>
+      </section>
+
+      <section class="page" id="crm">
+        <div class="card"><div class="sectionHead"><div><div class="eyebrow">CRM Comercial</div><h2>Pipeline de vendas</h2></div><button class="btn btnPrimary" data-page-link="ai">Usar IA</button></div>
+          <div class="pipeline">
+            <div class="col"><h3>Novos</h3><div class="leadcard"><b>Ana Paula</b><span class="muted">Lote + casa • Score 82</span><button class="btn btnLight" data-ai-prompt="Sugira abordagem para Ana Paula interessada em lote + casa">IA</button></div></div>
+            <div class="col"><h3>Qualificação</h3><div class="leadcard"><b>Rafael Martins</b><span class="muted">Somente lote • Score 74</span><button class="btn btnLight" data-ai-prompt="Sugira abordagem para Rafael interessado somente em lote">IA</button></div></div>
+            <div class="col"><h3>Proposta</h3><div class="leadcard"><b>Cláudia Pires</b><span class="muted">Casa Armonia • Score 91</span><button class="btn btnLight" data-ai-prompt="Sugira follow-up para proposta Casa Armonia">IA</button></div></div>
+            <div class="col"><h3>Fechamento</h3><div class="leadcard"><b>Marcos & Lívia</b><span class="muted">Combo Solaris + Essenza • Score 95</span><button class="btn btnLight" data-ai-prompt="Sugira fechamento para casal em combo lote e casa">IA</button></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="works">
+        <div class="card"><div class="sectionHead"><div><div class="eyebrow">Obras e Cliente</div><h2>Acompanhamento de implantação</h2></div></div>
+          <div class="list">
+            <div class="item"><div><b>Drenagem principal</b><div class="muted">72% • em andamento</div><div class="progress"><span style="width:72%"></span></div></div><span>Publicável</span></div>
+            <div class="item"><div><b>Terraplenagem setor A</b><div class="muted">64% • em andamento</div><div class="progress"><span style="width:64%"></span></div></div><span>Publicável</span></div>
+            <div class="item"><div><b>Rede de água</b><div class="muted">48% • mobilização</div><div class="progress"><span style="width:48%"></span></div></div><span>Interno</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="page" id="manager">
+        <div class="card"><div class="sectionHead"><div><div class="eyebrow">Painel Gestor</div><h2>Visão executiva</h2></div></div><div class="grid4"><div class="stat"><small>Leads</small><b>1.286</b></div><div class="stat"><small>VGV Propostas</small><b>R$ 9,4 mi</b></div><div class="stat"><small>Adimplência</small><b>92,6%</b></div><div class="stat"><small>Marketplace</small><b>R$ 2,1 mi</b></div></div></div>
+        <div class="grid2" style="margin-top:24px"><div class="card"><h3>Funil</h3><div class="list"><div class="item"><b>Leads captados</b><span>100%</span></div><div class="item"><b>Qualificados</b><span>62%</span></div><div class="item"><b>Propostas</b><span>28%</span></div><div class="item"><b>Fechamentos</b><span>11%</span></div></div></div><div class="card"><h3>Alertas</h3><div class="list"><div class="item"><b>5 obras com atenção</b><span>Ver</span></div><div class="item"><b>12 propostas sem retorno</b><span>Ver</span></div><div class="item"><b>8 atendimentos pendentes</b><span>Ver</span></div></div></div></div>
+      </section>
+
+      <section class="page" id="ai">
+        <div class="grid2"><div class="card"><div class="sectionHead"><div><div class="eyebrow">IA de Suporte</div><h2>Assistente comercial e operacional</h2></div></div><div class="actions" style="margin:0 0 16px"><button class="btn btnLight" data-ai-prompt="Explique PRICE x SAC">PRICE x SAC</button><button class="btn btnLight" data-ai-prompt="Compare lote, casa e combo">Comparar cenários</button><button class="btn btnLight" data-ai-prompt="Crie um resumo de obra">Resumo de obra</button></div><div class="chat"><div class="thread" id="thread"><div class="msg bot">Olá. Sou a IA da Futura Casa. Posso apoiar em vendas, simulações, obra, CRM e marketplace.</div></div><div class="chatbar"><input id="aiInput" placeholder="Digite uma pergunta"><button class="btn btnPrimary" id="aiSend">Enviar</button></div></div></div><div class="card"><h2>Aplicações da IA</h2><div class="list"><div class="item"><b>Qualificação de leads</b><span>✓</span></div><div class="item"><b>Apoio ao simulador</b><span>✓</span></div><div class="item"><b>Resumo de obras</b><span>✓</span></div><div class="item"><b>Atendimento ao cliente</b><span>✓</span></div></div></div></div>
+      </section>
+
+    </div>
+  </main>
+</div>
+
+<div class="drawerShade" id="shade"></div>
+<aside class="drawer" id="drawer">
+  <a class="brand" href="#home" data-page-link="home"><img src="assets/logo-futura-casa.svg" alt="Futura Casa"><div><b>Menu</b><small>Plataforma</small></div></a>
+  <nav class="nav" style="margin-top:18px">
+    <a href="#home" data-page-link="home">🏠 Dashboard</a><a href="#catalog" data-page-link="catalog">🧭 Lotes e Casas</a><a href="#sim" data-page-link="sim">🧮 Simulador</a><a href="#market" data-page-link="market">🛍️ Marketplace</a><a href="#crm" data-page-link="crm">👥 CRM</a><a href="#manager" data-page-link="manager">📊 Gestor</a><a href="#ai" data-page-link="ai">✨ IA</a>
+  </nav>
+</aside>
+<div class="bottom"><nav><a href="#home" data-page-link="home" class="active">🏠<span>Início</span></a><a href="#catalog" data-page-link="catalog">🧭<span>Explorar</span></a><a href="#sim" data-page-link="sim">🧮<span>Simular</span></a><a href="#works" data-page-link="works">🏗️<span>Obras</span></a><a href="#crm" data-page-link="crm">👤<span>Conta</span></a></nav></div>
+<div class="toast" id="toast"></div>
+
+<script>
+(function(){
+  const fmt = v => new Intl.NumberFormat('pt-BR', {style:'currency', currency:'BRL'}).format(Math.round(v||0));
+  let mode = 'lot';
+  let cart = [];
+  function $(s){return document.querySelector(s)}
+  function $$(s){return Array.from(document.querySelectorAll(s))}
+  function show(page){
+    $$('.page').forEach(p=>p.classList.toggle('active', p.id===page));
+    $$('[data-page-link]').forEach(a=>a.classList.toggle('active', a.getAttribute('data-page-link')===page));
+    $('#drawer').classList.remove('show'); $('#shade').classList.remove('show');
+    history.replaceState(null,'','#'+page);
+    window.scrollTo({top:0,behavior:'smooth'});
+  }
+  function toast(t){const el=$('#toast'); el.textContent=t; el.classList.add('show'); setTimeout(()=>el.classList.remove('show'),2200)}
+  function calc(){
+    const lot=Number($('#lotSelect')?.value||438000), home=Number($('#homeSelect')?.value||990000);
+    const total = mode==='lot'?lot:mode==='home'?home:mode==='future'?lot+home*.15:lot+home;
+    const entryPct = Number($('#entry')?.value||20); $('#entryText').value=entryPct+'%';
+    const entry=total*entryPct/100, fin=total-entry, term=Number($('#term')?.value||240), income=Number($('#income')?.value||17000);
+    const r=mode==='lot'?0.009:mode==='home'?0.0105:0.0098;
+    const system=$('#system')?.value||'PRICE';
+    let pay = system==='PRICE' ? fin*(r/(1-Math.pow(1+r,-term))) : (fin/term)+(fin*r);
+    const ratio = income?pay/income*100:0;
+    $('#modeTitle').textContent = mode==='lot'?'Somente lote':mode==='home'?'Somente casa':mode==='future'?'Lote agora + casa pré-contratada':'Lote + casa';
+    $('#simTotal').textContent=fmt(total); $('#simEntry').textContent=fmt(entry); $('#simFin').textContent=fmt(fin); $('#simPay').textContent=fmt(pay); $('#simRatio').textContent=ratio.toFixed(1).replace('.',',')+'%';
+    $('#simHealth').textContent=ratio<=30?'Saudável':ratio<=40?'Atenção':'Acima do ideal';
+    return {total,entry,fin,pay,ratio};
+  }
+  function renderCart(){
+    const total=cart.reduce((a,b)=>a+b.price,0); $('#cartTotal').textContent=fmt(total);
+    $('#cartList').innerHTML = cart.length? cart.map((i,idx)=>`<div class="item"><div><b>${i.name}</b><div class="muted">Marketplace</div></div><div><b>${fmt(i.price)}</b> <button class="btn btnLight" data-remove="${idx}">Remover</button></div></div>`).join('') : '<div class="muted">Nenhum item adicionado.</div>';
+    $$('[data-remove]').forEach(b=>b.onclick=()=>{cart.splice(Number(b.dataset.remove),1);renderCart()});
+  }
+  function aiAnswer(q){
+    let a='Minha recomendação: conduza para uma simulação objetiva, com duas alternativas de entrada e um próximo passo claro.';
+    const t=q.toLowerCase();
+    if(t.includes('price')||t.includes('sac')) a='PRICE oferece previsibilidade de parcela; SAC começa mais alto, reduz ao longo do tempo e pode ser financeiramente melhor para quem tem caixa.';
+    else if(t.includes('cenário')||t.includes('lote')) a='Compare sempre quatro cenários: somente lote, somente casa, lote + casa, e lote agora com casa pré-contratada. O cliente entende melhor quando vê parcela, entrada e esforço sobre renda.';
+    else if(t.includes('obra')) a='Resumo de obra: apresente percentual por frente, fotos recentes, próximos marcos e impacto positivo para o cliente. Isso reduz ansiedade e aumenta confiança.';
+    return a;
+  }
+  function sendAI(q){
+    if(!q) return;
+    const thread=$('#thread');
+    thread.insertAdjacentHTML('beforeend', `<div class="msg user">${q}</div><div class="msg bot">${aiAnswer(q)}</div>`);
+    thread.scrollTop=thread.scrollHeight;
+  }
+  $$('[data-page-link]').forEach(a=>a.addEventListener('click',e=>{e.preventDefault();show(a.getAttribute('data-page-link'))}));
+  $$('#lotSelect,#homeSelect,#entry,#income,#term,#system').forEach(el=>el&&el.addEventListener('input',calc));
+  $$('[data-mode]').forEach(b=>b.onclick=()=>{mode=b.dataset.mode;$$('[data-mode]').forEach(x=>x.classList.toggle('active',x===b));calc()});
+  $$('.addMarket').forEach(b=>b.onclick=()=>{cart.push({name:b.dataset.name,price:Number(b.dataset.price)});renderCart();toast('Item adicionado ao orçamento.')})
+  $('#clearCart').onclick=()=>{cart=[];renderCart();toast('Orçamento limpo.')}; 
+  $('#saveSim').onclick=()=>toast('Proposta salva na demonstração.');
+  $('#copySim').onclick=()=>{const c=calc(); navigator.clipboard?.writeText('Futura Casa | Simulação: '+fmt(c.total)+' | Parcela: '+fmt(c.pay)); toast('Resumo copiado.')}; 
+  $$('.simHomeBtn').forEach(b=>b.onclick=()=>show('sim'));
+  $('#hamb').onclick=()=>{$('#drawer').classList.add('show');$('#shade').classList.add('show')};
+  $('#shade').onclick=()=>{$('#drawer').classList.remove('show');$('#shade').classList.remove('show')};
+  $('#aiSend').onclick=()=>{const input=$('#aiInput');sendAI(input.value.trim());input.value=''};
+  $$('[data-ai-prompt]').forEach(b=>b.onclick=()=>{show('ai');setTimeout(()=>sendAI(b.dataset.aiPrompt),80)});
+  const initial=location.hash.replace('#',''); if(initial) show(initial); calc(); renderCart();
+})();
+</script>
+</body>
+</html>
